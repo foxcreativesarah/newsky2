@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+	  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+	  <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+    <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
+    
+    <title>New Sky</title>
+  </head>
+
+  <body>
+
+ <!-- Stars Modal -->
+ <div class="modal fade" id="starsModal" tabindex="-1" role="dialog" aria-labelledby="starsModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+     <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="starModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body"><!-- Star Content gets dynamically loaded via ajax in main.js -->
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+       <!-- Video Modal -->
+       <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+           <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="#videoModalLabel">What is a Star?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <iframe width="480" height="315" src="https://www.youtube.com/embed/fgqnh_6cCE4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen alt="Animated YouTube video about the birth of a star set to music"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!--  start header  -->
+  <div class="header-wrapper">
+    <div class="main">
+    <div class="header-summer">
+            <a href="#" class="cygnus-btn" data-toggle="modal" data-target="#starsModal" data-title="CYGNUS" data-meaning="The Swan" data-content="content/cygnus.html"><img src="images/cygnus.png" alt="Illustration of Cygnus the Swan constellation"></a>
+            <a href="#" class="draco-btn" data-toggle="modal" data-target="#starsModal" data-title="DRACO" data-meaning="The Dragon" data-content="content/draco.html"><img src="images/draco.png" alt="Illustration of Draco the Dragon constellation"></a>
+            <a href="#" class="ursa-major-btn" data-toggle="modal" data-target="#starsModal" data-title="URSA MAJOR" data-meaning="The Bear" data-content="content/ursa-major.html"><img src="images/ursa-major.png" alt="Illustration of Ursa Major the Great Bear constellation"></a>
+            <a href="#" class="leo-btn" data-toggle="modal" data-target="#starsModal" data-title="LEO" data-meaning="The Lion" data-content="content/leo.html"><img src="images/leo.png" alt="Illustration of Leo the Lion constellation"></a>
+  
+            <a href="#" class="home-btn"><img src="images/home.png" alt="Illustration of a house"></a>
+            <div class="find-constellations">
+              <img src="images/flashlight.png" alt="Illustration of a flashlight" class="flashlight">
+              <p class="flashlight-text">To learn how to find constellations using your hand, click <a href="#navigate" class="here-btn">HERE</a>.</p>
+            </div>
+    </div>
+    <header class="stars">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-7">
+              <h1>New Sky</h1>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-4">
+              <button type="button" id="summer" class="btn btn-default btn-center">Summer Sky</button>
+          </div>
+          <div class="col-md-4">
+              <button type="button" id="winter" class="btn btn-default btn-center">Winter Sky</button>
+          </div>
+        </div>
+          <div class="row justify-content-center text-center">
+            <div class="col-md-6">
+              <ul>
+                <li><a href="#navigate" class="menu">How to Navigate the Night Sky</a></li>
+                <li><a href="#star" class="menu">What is a Star?</a></li>
+                <li><a href="#news" class="menu">Sky News &amp; Events</a></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </header>
+    <div class="header-winter">
+      <a href="#" class="cetus-btn" data-toggle="modal" data-target="#starsModal" data-title="CETUS" data-meaning="The Whale" data-content="content/cetus.html"><img src="images/cetus.png" alt="Illustration of Cetus the Whale constellation"></a>
+            <a href="#" class="orion-btn" data-toggle="modal" data-target="#starsModal" data-title="ORION" data-meaning="The Hunter" data-content="content/orion.html"><img src="images/orion.png" alt="Illustration of Orion the Hunter constellation"></a>
+            <a href="#" class="pegasus-btn" data-toggle="modal" data-target="#starsModal" data-title="PEGASUS" data-meaning="The Winged Horse" data-content="content/pegasus.html"><img src="images/andromeda.png" alt="Illustration of Pegasus the Winged Horse constellation"></a>
+            <a href="#" class="taurus-btn" data-toggle="modal" data-target="#starsModal" data-title="TAURUS" data-meaning="The Bull" data-content="content/taurus.html"><img src="images/taurus.png" alt="Illustration of Taurus the Bull constellation"></a>
+  
+            <a href="#" class="home-btn"><img src="images/home.png" alt="Illustration of a house"></a>
+            <div class="find-constellations">
+              <img src="images/flashlight.png" alt="Illustration of a flashlight" class="flashlight">
+              <p class="flashlight-text">To learn how to find constellations using your hand, click <a href="#navigate" class="here-btn">HERE</a>.</p>
+            </div>
+    </div>
+  </div>
+  </div>
+  <!--  end header  -->
+
+  <!-- start welcome section -->
+  <section class="welcome">
+    <div class="container">
+      <div class="row padding-normal">
+        <div class="col-md-12">
+            <h2>Welcome to New Sky...</h2>
+            <p class="intro">Constellations are groups of stars that form the shape of an object or animal. Click the <strong>Summer Sky</strong> and <strong>Winter Sky</strong> buttons above to learn about the major constellations in the night sky. Click the <strong>menu</strong> button above or scroll down to find out more about stars and the special events that are happening in the sky this year.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end welcome section -->
+
+  <!-- start navigate section -->
+  <section class="navigate" id="navigate">
+    <div class="container">
+      <div class="row padding-normal">
+          <div class="col-md-2">
+              <img src="images/boy1.png" alt="Illustration of a teenage boy using a telescope">
+          </div>
+        <div class="col-md-10">
+          <h3>How to Navigate the Night Sky</h3>
+          <img src="images/handsanimation.gif" alt="Animation of how to navigate the night sky with your hand" class="animation">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10 offset-2">
+          <p class="navigate padding-normal">You can find the constellations in the sky by using your hands to measure the <strong>degrees ( º )</strong> between the stars. For example, if you hold your arm up to the sky and hold three fingers up on your hand, the width of your three fingers is equal to about 5º. <strong>Below is a diagram showing the hand positions equal to 5º, 10º and 25º</strong> and above is an animation showing how you can locate Leo the lion by measuring 40º from the Big Dipper in the summer sky.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10 offset-2 padding-normal">
+          <img src="images/hands.png" alt="Illustration of a hand with three fingers held up to equal five degrees, a fist to equal ten degrees, with thumb and pinky out to equal twenty-five degrees" class="hands">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10 offset-2">
+            <p class="navigate padding-normal">Click on the <strong>summer</strong> or <strong>winter sky</strong> button at the top of the website and then click the constellation that interests you. <strong>Information about how you can find that constellation using your hand will pop up.</strong><br><br>Come back here if you need to remember the hand positions and how many degrees they equal. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end navigate section -->
+
+  <!-- start star section -->
+  <section class="star" id="star">
+    <div class="container">
+      <div class="row padding-normal">
+        <div class="col-md-10">
+            <h3 class="whatIs">What is a Star?</h3>
+            <p class="star">You’ve seen the stars twinkling in the night sky for most of your life… <strong>ever wonder how a star is born? Ever wonder what a star is made of?</strong> You can find out in this video, which explains the beginning of a star's lifecycle.</p>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#videoModal">
+              Play Video
+              </button>
+        </div>
+        <div class="col-md-2">
+            <img class="girl" src="images/girl1.png" alt="Illustration of a teenage girl looking through a telescope">
+        </div>
+      </div>
+  </div>
+</section>
+<!-- end star section -->
+
+<!-- start news section -->
+<section id="news">
+  <div class="container">
+    <div class="row padding-double">
+      <div class="col-md-2">
+        <img src="images/boy2.png" alt="Illustration of a teenage boy holding a telescope" class="boy2">
+      </div>
+      <div class="col-md-10">
+        <h3>Sky News &amp; Events</h3>
+        <table class="table">
+          <p class="year">2018</p>
+          <thead>
+            <tr>
+              <th scope="col" class="table-header">Date</th>
+              <th scope="col" class="table-header">Event</th>
+              <th scope="col" class="table-header">Picture</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="date">January 31</th>
+              <td><p class="title">Super, Blue Moon, Eclipse</p>
+                  <p class="table-copy">Watch as the Earth’s dark shadow slowly creeps over the bright moon as the planet moves between the sun and moon in this <strong>total lunar eclipse</strong>. The <strong>full moon</strong> this night will also be a <strong>supermoon</strong>, appearing bigger than usual as the moon will be relatively close to the Earth, and since this will be the second full moon of the month, it will also be a <strong>blue moon</strong>. </p>
+              </td>
+              <td><img src="images/eclipse.jpg" alt="Image of a lunar eclipse" class="picture"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="date">March 7-8</th>
+              <td><p class="title">Planet Parade</p>
+                <p class="table-copy">Three planets (Saturn, Mars and Jupiter) will form a cosmic conga line with the moon in early March. This <strong>planetary alignment</strong> will dominate the southeastern sky at dawn. Starting <strong>March 7</strong>, the <strong>wanning moon</strong> will appear to pay visits to each planet in the lineup. On <strong>March 8</strong>, the moon will tuck itself <strong>between Mars and Jupiter</strong>.</p>
+              </td>
+              <td><img src="images/parade.jpg" alt="Image of Saturn, Mars, and Jupiter aligned in the night sky" class="picture"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="date">July 27</th>
+              <td><p class="title">Mars at its Best</p>
+                <p class="table-copy">On this night, <strong>Mars</strong> will be at its biggest and brightest since 2003. At this time, <strong>Mars will look like a super-bright orange star</strong> in the southern sky. Mars does not have a perfectly circular orbit around the sun, so the red planet gets nearer and farther from Earth over time. <strong>On this night, Mars will be at its closest to the Earth and won’t get this close again until 2035.</strong> If you can, use a backyard telescope to view surface features of Mars like <strong>white polar caps and dark volcanic plains</strong>.</p>
+              </td>
+              <td><img src="images/mars.jpg" alt="Image of Mars glowing red in the night sky" class="picture"></td>
+            </tr>
+            <tr>
+                <th scope="row" class="date">August 12-13</th>
+                <td><p class="title">Perseid Meteor Shower</p>
+                  <p class="table-copy">One of the most intense meteor showers, <strong>the Pereids regularly produce up to 60 shooting stars an hour</strong> at their peak. This year promises to be spectacular as the peak happens on a dark, moonless sky on the night of <strong>August 12</strong> and into the dawn of <strong>August 13</strong>.</p>
+                </td>
+                <td><img src="images/perseids.jpg" alt="Image of the Perseids meteor shower at night" class="picture"></td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+        </div>
+</section>
+<!-- end news section -->
+
+<!-- start footer -->
+<footer>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <h4>Sponsored by</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <img src="images/logo.png" alt="The Learning Company logo" class="logo">
+    </div>
+    <div class="col-md-3 offset-6">
+      <a href="#" class="social"><img src="images/twitter.png" alt="Twitter bird" class="twitter"></a>
+      <a href="#" class="social"><img src="images/facebook.png" alt="Facebook F" class="facebook"></a>
+      <a href="#" class="social"><img src="images/instagram.png" alt="Instagram camera" class="instagram"></a>
+    </div>
+  </div>
+</div>
+</footer>
+<!-- end footer -->
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

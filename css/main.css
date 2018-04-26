@@ -1,0 +1,482 @@
+/* Fonts  */
+/* 	https://www.google.com/fonts#UsePlace:use/Collection:Montserrat */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700i,900');
+
+@font-face {
+    font-family: seventiesPrinted;
+    src: url(Seventies Printed.otf);
+}
+
+/*  General CSS  */
+
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header-wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.main {
+    height: 100vh;
+    width: 300vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transform: translateX(-100vw);
+    transition: all 0.3s ease;
+}
+
+.main.summer {
+    transform: translateX(0);
+}
+
+.main.winter {
+    transform: translateX(-200vw);
+}
+
+.header-summer {
+    height: 100vh;
+    width: 100vw;
+    background-color: #151E3B;
+    background-image: url(../images/summer-sky.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+
+.header-winter {
+    height: 100vh;
+    width: 100vw;
+    background-color: #151E3B;
+    background-image: url(../images/winter-sky.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+
+img.flashlight {
+    display: block;
+    top: 568px;
+    left: 1218px;
+    position: absolute;
+}
+
+.flashlight-text {
+    top: 691px;
+    left: 1168px;
+    position: absolute;
+    font-family: "montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+h1 {
+    display: block;
+    padding-top: 325px; 
+    font-family: "seventiesPrinted";
+    font-size: 200px;
+    color: #FFFFFF;  
+}
+
+ul {
+    display: block;
+    margin-top: 50px;
+}
+
+.padding-normal {
+    padding-top: 50px;
+}
+
+.padding-double {
+    padding-top: 100px;
+}
+
+.menu {
+    font-family: "montserrat";
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+
+/* Buttons */
+
+.btn-default {
+    display: block;
+    border-width: 3px;
+    border-color: #FFFFFF;
+    height: 100px;
+    width: 250px;
+    background-color: transparent;
+    font-size: 32px;
+    font-family: "montserrat"; 
+    color: #FFFFFF;
+}
+
+.btn-primary {
+    display: block;
+    background-color: #151E3B;
+    height: 100px;
+    width: 250px;
+    font-size: 32px;
+    font-family: "montserrat"; 
+    color: #FFCD05;
+    margin-left: 288px;
+}
+
+.btn-center {
+    margin: 0 auto;
+}
+
+.cygnus-btn {
+        display: block;
+        top: 300px;
+        left: 565px;
+        position: absolute;
+}
+
+.cygnus-btn img {
+    width: 100px;
+}
+
+.draco-btn {
+    display: block;
+    top: 320px;
+    left: 660px;
+    position: absolute;
+}
+
+.draco-btn img {
+    width: 134px;
+}
+
+.ursa-major-btn {
+    display: block;
+    top: 166px;
+    left: 805px;
+    position: absolute;
+}
+
+.ursa-major-btn img {
+    height: 195px;
+}
+
+.leo-btn {
+    display: block;
+    top: 212px;
+    left: 952px;
+    position: absolute;
+}
+
+.leo-btn img {
+    height: 175px;
+}
+
+.cetus-btn {
+    display: block;
+    top: 481px;
+    left: 690px;
+    position: absolute;
+}
+
+.cetus-btn img {
+    width: 345px;
+}
+
+.pegasus-btn {
+    display: block;
+    top: 218px;
+    left: 743px;
+    position: absolute; 
+}
+
+.pegasus-btn img {
+    width: 286px;
+}
+
+.orion-btn {
+    display: block;
+    top: 489px;
+    left: 406px;
+    position: absolute;
+}
+
+.orion-btn img {
+    height: 112px;
+}
+
+.taurus-btn {
+    display: block;
+    top: 456px;
+    left: 526px;
+    position: absolute;
+}
+
+.taurus-btn img {
+    height: 124px;
+}
+
+.home-btn {
+    display: block;
+    top: 690px;
+    left: 55px;
+    position: absolute;
+}
+
+.here-btn {
+    color: #FFCD05;
+    font-weight: 700;
+}
+
+/* welcome section */
+
+h2 {
+    display: block;
+    margin-top: 50px;
+    font-family: "seventiesPrinted";
+    font-size: 100px;
+}
+
+p.intro {
+    font-family: "montserrat";
+    font-size: 28px;
+    font-weight: 500;
+}
+
+
+/* navigate section */
+
+h3 {
+    display: block;
+    margin: 50px 0;
+    font-family: "seventiesPrinted";
+    font-size: 70px;
+    color: #FFCD05;
+}
+
+img.animation {
+    display: block;
+    width: 914px;
+}
+
+p.navigate {
+    display: block;
+    font-family: "montserrat";
+    font-size: 20px;
+}
+
+img.hands {
+    display: block;
+    width: 914px;
+}
+
+
+/* star section */
+
+p.star {
+    display: block;
+    margin: 50px;
+    font-family: "montserrat";
+    font-size: 20px;
+}
+
+.whatIs {
+    padding-left: 575px;
+}
+
+
+/* news section */
+
+
+p.year {
+    display: block;
+    padding-left: 332px;
+    font-family: "seventiesPrinted";
+    font-size: 60px;
+    color: #151E3B;
+}
+
+th.table-header {
+    font-family: "seventiesPrinted";
+    font-size: 64px;
+    color: #151E3B;
+    padding-right: 75px;
+}
+
+th.date {
+    font-family: "montserrat";
+    font-size: 18px;
+    font-weight: 400;
+    color: #333366;
+}
+
+p.title {
+    font-family: "montserrat";
+    font-size: 18px;
+    font-weight: 400;
+    color: #333366;
+}
+
+p.table-copy {
+    font-family: "montserrat";
+    font-size: 16px;
+    color: #000000;
+}
+
+img.picture {
+    width: 318px; 
+}
+
+
+/* footer */
+
+footer {
+    background-color: #FFFFFF;
+    border: solid 2px gray; 
+}
+
+h4 {
+    font-family: "montserrat";
+    font-size: 18px;
+    color: #4A4A4A;
+    margin: 25px;
+}
+
+/* modals */
+
+h5.modal-title {
+    font-family: "montserrat";
+    font-size: 36px;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+
+
+.modal-header {
+    background-color: #000000;
+    display: flex;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 1rem;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #f8f9fa;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
+
+.modal-body {
+    background-color: #000000;
+}
+
+h6 {
+    font-family: "montserrat";
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFCD05;
+}
+
+.padding-modal {
+    padding-top: 25px;
+}
+
+.blue-rectangle {
+    width: 465px;
+    height: 350px;
+    margin: auto;
+    background-color: #151E3B;
+    position: relative;
+}
+
+img.swan {
+    display: block;
+    top: 23px;
+    left: 111px;
+    position: absolute;
+}
+
+.modal-text {
+    font-family: "montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+img.dragon {
+    display: block;
+    top: 29px;
+    left: 61px;
+    position: absolute;
+}
+
+img.bear1 {
+    display: block;
+    top: 60px;
+    left: 23px;
+    position: absolute;
+}
+
+img.lion {
+    display: block;
+    top: 55px;
+    left: 19px;
+    position: absolute;
+}
+
+img.whale {
+    display: block;
+    width: 418px;
+    top: 40px;
+    left: 24px;
+    position: absolute; 
+}
+
+img.horse {
+    display: block;
+    top: 39px;
+    left: 56px;
+    position: absolute;
+    width: 345px; 
+}
+
+img.hunter {
+    display: block;
+    top: 34px;
+    left: 121px;
+    position: absolute;
+    height: 283px;
+}
+
+img.bull {
+    display: block;
+    top: 37px;
+    left: 145px;
+    position: absolute;
+    height: 261px;
+}
+
